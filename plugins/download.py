@@ -152,7 +152,7 @@ async def uloader(client, message):
     if (typee == "audio"):
         opts = {
             "format": "bestaudio",
-            "addmetadata": True,
+            "addmetadata": False,
             "noplaylist": False,
             "key": "FFmpegMetadata",
             "prefer_ffmpeg": True,
@@ -175,7 +175,7 @@ async def uloader(client, message):
     elif (typee == "video"):
         opts = {
             "format": "best",
-            "addmetadata": True,
+            "addmetadata": False,
             "noplaylist": False,
             "xattrs": True,
             "key": "FFmpegMetadata",
