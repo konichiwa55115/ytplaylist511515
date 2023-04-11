@@ -225,7 +225,7 @@ async def uloader(client, message):
                         fduration, fwidth, fheight = get_metadata(single_file)
                         await message.reply_chat_action("upload_audio")
                         await client.send_audio(
-                            message.chat_id,
+                            chat_id,
                             single_file,
                             caption=f"**File:** `{ytdl_data_name_audio}`",
                             duration=fduration,
@@ -250,7 +250,7 @@ async def uloader(client, message):
                         fduration, fwidth, fheight = get_metadata(single_file)
                         await message.reply_chat_action("upload_video")
                         await client.send_video(
-                            message.chat_id,
+                            chat_id,
                             single_file,
                             caption=f"**File:** `{ytdl_data_name_video}`",
                             supports_streaming=True,
