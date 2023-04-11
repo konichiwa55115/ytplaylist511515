@@ -3,6 +3,7 @@ ffmpeg-python
 ffprobe-python
 ffprobe
 asyncio
+pyrogram
 hachoir
 tgcrypto
 youtube_dl
